@@ -1,110 +1,167 @@
-## Shiv Nand
 
-<div align="center">
 
-  <img src="./public/logo.png" alt="logo" width="90" height="auto">
+## 📋 Overview
 
-  <h1>Hotel Management System - Booking</h1>
+**Hotel Management System** is a full-featured web application developed by **Shiv Nand** for managing hotel cabin bookings and reservations. Users can browse available cabins, check real-time availability, make reservations, and manage their bookings through an intuitive, responsive interface.
 
-  <h3>
-    <a href="https://the-wild-oasis-booking-alamin.vercel.app">
-      <strong>Live Site</strong>
-    </a>
-  </h3>
+<!-- Screenshot placeholder - Add screenshot here when available -->
 
-  <div align="center">
-    <a href="https://the-wild-oasis-booking-alamin.vercel.app">View website</a>
-    •
-    <a href="https://github.com/CodeWithAlamin/The-Wild-Oasis-Booking/issues">Report Bug</a>
-    •
-    <a href="https://github.com/CodeWithAlamin/The-Wild-Oasis-Booking/pulls">Request Feature</a>
-  </div>
+## ✨ Features
 
-  <hr>
+- **Cabin Browsing**: Browse all available cabins with detailed descriptions and images
+- **Real-time Availability**: Check cabin availability based on selected dates
+- **Reservation Management**: Create, edit, and cancel reservations seamlessly
+- **User Authentication**: Secure Google OAuth sign-in integration
+- **Profile Management**: Update and manage guest profile information
+- **Responsive Design**: Fully responsive and accessible UI across all devices
+- **Modern UX**: Intuitive user interface with smooth interactions
 
-</div>
+## 🛠️ Tech Stack
 
-<!-- Badges -->
-<div align="center">
+This project is built using modern web technologies:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/CodeWithAlamin)
-[![Twitter Follow](https://img.shields.io/twitter/follow/CodeWithAlamin?style=for-the-badge&logo=x)](https://x.com/CodeWithAlamin)
+- **Next.js 14.2** (App Router) - React framework for production
+- **Tailwind CSS** - Utility-first CSS framework
+- **Supabase** - Backend-as-a-Service for database and storage
+- **NextAuth.js (Auth.js)** - Authentication library with Google OAuth
+- **date-fns** - Modern JavaScript date utility library
+- **React** - UI library for building interactive interfaces
 
-![status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+## 🚀 Getting Started
 
-</div>
+### Prerequisites
 
-<!-- Brief -->
-<p align="center">
-Welcome to <b>Hotel Management System</b>! This is the customer version of the <a href="https://github.com/CodeWithAlamin/The-Wild-Oasis">hotel management</a> web app, where users can view and book cabins based on availability, manage their bookings, and update their profiles. This project was a great learning experience for me as I explored Next.js, Auth.js (NextAuth), and many other advanced techniques.
-</p>
+Before you begin, ensure you have the following installed:
 
-<!-- Screenshot -->
-<a align="center" href="https://the-wild-oasis-booking-alamin.vercel.app">
+- **Node.js** 18.0 or higher
+- **npm** or **yarn** package manager
+- A **Supabase** account and project
+- **Google OAuth** credentials (Client ID and Secret)
 
-![Screenshot](./public/thumbnail.png)
+### Installation & Setup
 
-</a>
-
-## Live Site
-
-Check out the live app here: [Hotel Management System - Booking](https://the-wild-oasis-booking-alamin.vercel.app/)
-
-## Admin Version
-
-I also built an **admin version** of this app for hotel employees to manage cabins, bookings, and guests. The repository is [here](https://github.com/CodeWithAlamin/The-Wild-Oasis), and the live site is [here](https://the-wild-oasis-alamin.vercel.app).
-
-## Features
-
-- View all available cabins with descriptions and images.
-- Book a cabin based on available dates and select the number of guests.
-- Sign in with Google to manage bookings.
-- View your booked cabins, edit them, or cancel if needed.
-- Update your profile information.
-- Fully responsive on all devices (I made sure to make it mobile-friendly!).
-
-## Technologies Used
-
-- **Next.js** (App Router)
-- **Tailwind CSS** for styling
-- **Supabase** for the database (shared with the admin app)
-- **NextAuth.js** for authentication (Google sign-in)
-- **Date-fns** for date handling
-
-## What I Learned
-
-This project deepened my knowledge of Next.js (especially the App Router) and introduced me to using libraries like NextAuth.js. I learned to build a fully functional booking system, integrate user authentication, and ensure the app is responsive on all devices.
-
-## Setup Instructions
-
-To run this project locally:
-
-1. Clone the repo:
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/CodeWithAlamin/The-Wild-Oasis-Booking.git
+   git clone <your-repository-url>
+   cd hotel-management-system
    ```
-2. Install dependencies:
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
-3. Set up environment variables:
-   - You’ll need to configure Supabase and NextAuth (Google sign-in). Add your environment variables in a `.env.local` file. Check out the `.env.local.example` for what you need to include.
-4. Run the development server:
+
+3. **Configure environment variables**
+   
+   Create a `.env.local` file in the root directory:
+   ```env
+   # Supabase Configuration
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+   # NextAuth Configuration
+   AUTH_SECRET=your_generated_auth_secret
+   AUTH_GOOGLE_ID=your_google_oauth_client_id
+   AUTH_GOOGLE_SECRET=your_google_oauth_client_secret
+   ```
+
+   > **Note**: Generate `AUTH_SECRET` using `openssl rand -base64 32` or an online generator.
+
+4. **Run the development server**
    ```bash
    npm run dev
    ```
-5. Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-### Author
+5. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
-<b>👤 Alamin</b>
+## 📜 Available Scripts
 
-- LinkedIn - [@CodeWithAlamin](https://www.linkedin.com/in/CodeWithAlamin)
-- Twitter - [@CodeWithAlamin](https://www.twitter.com/CodeWithAlamin)
-- GitHub - [@CodeWithAlamin](https://github.com/CodeWithAlamin)
+- `npm run dev` - Start the development server
+- `npm run build` - Create an optimized production build
+- `npm start` - Start the production server
+- `npm run lint` - Run ESLint to check code quality
 
-Feel free to contact me with any questions or feedback!
+## 📁 Project Structure
 
-### Acknowledgments
+```
+Hotel Management System/
+├── app/
+│   ├── _components/          # Reusable UI components
+│   │   ├── Cabin.js
+│   │   ├── CabinCard.js
+│   │   ├── ReservationForm.js
+│   │   └── ...
+│   ├── _lib/                 # Utilities and services
+│   │   ├── actions.js        # Server actions
+│   │   ├── auth.js           # Authentication configuration
+│   │   ├── data-service.js   # Database queries
+│   │   └── supabase.js       # Supabase client
+│   ├── _styles/              # Global styles
+│   │   └── globals.css
+│   ├── api/                  # API routes
+│   │   └── auth/
+│   ├── account/              # Authenticated routes
+│   │   ├── profile/
+│   │   └── reservations/
+│   ├── cabins/               # Public cabin pages
+│   ├── layout.js             # Root layout
+│   └── page.js               # Homepage
+├── public/                   # Static assets
+│   ├── logo.png
+│   ├── thumbnail.png
+│   ├── sitemap.xml
+│   └── robots.txt
+├── package.json
+└── README.md
+```
 
-This app was developed as part of the [Udemy course](https://www.udemy.com/course/the-ultimate-react-course) by **Jonas Schmedtmann**. His teaching style and guidance were instrumental in helping me build this project and learn Next.js at a deeper level. Huge thanks to Jonas for making the learning experience enjoyable and impactful.
+## 🔒 Environment Variables
+
+Ensure all required environment variables are set in your `.env.local` file:
+
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous/public key |
+| `AUTH_SECRET` | Secret key for NextAuth.js (generate securely) |
+| `AUTH_GOOGLE_ID` | Google OAuth Client ID |
+| `AUTH_GOOGLE_SECRET` | Google OAuth Client Secret |
+
+## 🌐 Deployment
+
+This application can be deployed on any platform that supports Node.js:
+
+- **Vercel** (Recommended for Next.js)
+- **Netlify**
+- **Render**
+- **Railway**
+- **AWS Amplify**
+
+### Deployment Checklist
+
+1. Set all environment variables in your hosting platform
+2. Update `public/sitemap.xml` with your production domain
+3. Update `public/robots.txt` with your production domain
+4. Configure canonical URLs in `app/layout.js`
+5. Update Open Graph and Twitter card URLs in `app/layout.js`
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👤 Author
+
+**Shiv Nand**
+
+- Developer & Maintainer of Hotel Management System
+- All rights reserved © 2024
+
+---
+
+<div align="center">
+
+**Built with ❤️ by Shiv Nand**
+
+</div>
