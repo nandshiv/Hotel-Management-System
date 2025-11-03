@@ -2,7 +2,7 @@
 
   <img src="./public/logo.png" alt="logo" width="90" height="auto">
 
-  <h1>The Wild Oasis - Booking</h1>
+  <h1>Hotel Management System - Booking</h1>
 
   <h3>
     <a href="https://the-wild-oasis-booking-alamin.vercel.app">
@@ -34,7 +34,7 @@
 
 <!-- Brief -->
 <p align="center">
-Welcome to <b>The Wild Oasis</b>! This is the customer version of the <a href="https://github.com/CodeWithAlamin/The-Wild-Oasis">hotel management</a> web app, where users can view and book cabins based on availability, manage their bookings, and update their profiles. This project was a great learning experience for me as I explored Next.js, Auth.js (NextAuth), and many other advanced techniques.
+Welcome to <b>Hotel Management System</b>! This is the customer version of the <a href="https://github.com/CodeWithAlamin/The-Wild-Oasis">hotel management</a> web app, where users can view and book cabins based on availability, manage their bookings, and update their profiles. This project was a great learning experience for me as I explored Next.js, Auth.js (NextAuth), and many other advanced techniques.
 </p>
 
 <!-- Screenshot -->
@@ -46,7 +46,7 @@ Welcome to <b>The Wild Oasis</b>! This is the customer version of the <a href="h
 
 ## Live Site
 
-Check out the live app here: [The Wild Oasis - Booking](https://the-wild-oasis-booking-alamin.vercel.app/)
+Check out the live app here: [Hotel Management System - Booking](https://the-wild-oasis-booking-alamin.vercel.app/)
 
 ## Admin Version
 

@@ -31,14 +31,39 @@ function SideNavigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-r border-primary-900">
-      <ul className="flex flex-col gap-2 h-full text-lg">
+    <nav>
+      {/* Mobile: top-tabs */}
+      <ul className="md:hidden flex items-center gap-2 overflow-x-auto no-scrollbar p-2 rounded-xl bg-primary-900/40 border border-primary-800/70">
+        {navLinks.map((link) => (
+          <li key={link.name} className="shrink-0">
+            <Link
+              className={`$${""} ${
+                pathname === link.href
+                  ? "bg-accent-500 text-primary-900"
+                  : "bg-primary-800/60 text-primary-100"
+              } inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold hover:bg-accent-400 hover:text-primary-900 transition-colors`}
+              href={link.href}
+            >
+              {link.icon}
+              <span>{link.name}</span>
+            </Link>
+          </li>
+        ))}
+        <li className="ml-auto">
+          <SignOutButton />
+        </li>
+      </ul>
+
+      {/* Desktop: card sidebar */}
+      <ul className="hidden md:flex md:flex-col gap-2 h-full text-lg bg-primary-900/40 border border-primary-800/70 rounded-xl p-2">
         {navLinks.map((link) => (
           <li key={link.name}>
             <Link
-              className={`${
-                pathname === link.href ? "bg-primary-900" : ""
-              } py-3 px-5 hover:bg-primary-900 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold text-primary-200`}
+              className={`$${""} ${
+                pathname === link.href
+                  ? "bg-accent-500 text-primary-900"
+                  : "hover:bg-primary-900/60 text-primary-200"
+              } py-3 px-5 rounded-lg transition-colors flex items-center gap-4 font-semibold`}
               href={link.href}
             >
               {link.icon}

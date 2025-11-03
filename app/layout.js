@@ -10,8 +10,8 @@ const josefin = Josefin_Sans({
 
 export const metadata = {
   title: {
-    template: "%s | The Wild Oasis Booking | Alamin (CodeWithAlamin)",
-    default: "The Wild Oasis Booking | Alamin (CodeWithAlamin)",
+    template: "%s | Hotel Management System Booking | Alamin (CodeWithAlamin)",
+    default: "Hotel Management System Booking | Alamin (CodeWithAlamin)",
   },
 };
 
@@ -26,15 +26,15 @@ export default function RootLayout({ children }) {
       />
       <meta
         name="description"
-        content="Explore The Wild Oasis Booking by Alamin (CodeWithAlamin). Find unique destinations, thrilling activities, and plan your next wild getaway."
+        content="Explore Hotel Management System Booking by Alamin (CodeWithAlamin). Find unique destinations, thrilling activities, and plan your next wild getaway."
       />
-      <meta name="application-name" content="The Wild Oasis Booking" />
+      <meta name="application-name" content="Hotel Management System Booking" />
       <meta name="referrer" content="origin-when-cross-origin" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <meta
         name="apple-mobile-web-app-title"
-        content="The Wild Oasis Booking"
+        content="Hotel Management System Booking"
       />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="format-detection" content="telephone=no" />
@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
 
       <meta
         name="keywords"
-        content="Wild Oasis,
-            Wild Oasis Booking,
-            The Wild Oasis Website,
+        content="Hotel Management System,
+            Hotel Management System Booking,
+            Hotel Management System Website,
             Nextjs project,
             Thrilling Experiences,
             Adventure,
@@ -61,10 +61,10 @@ export default function RootLayout({ children }) {
         property="og:url"
         content="https://the-wild-oasis-booking-alamin.vercel.app"
       />
-      <meta property="og:title" content="The Wild Oasis Booking" />
+      <meta property="og:title" content="Hotel Management System Booking" />
       <meta
         property="og:description"
-        content="Explore The Wild Oasis Booking by Alamin (CodeWithAlamin). Find unique destinations, thrilling activities, and plan your next wild getaway."
+        content="Explore Hotel Management System Booking by Alamin (CodeWithAlamin). Find unique destinations, thrilling activities, and plan your next wild getaway."
       />
       <meta
         property="og:image"
@@ -74,10 +74,10 @@ export default function RootLayout({ children }) {
         property="og:image:secure_url"
         content="https://the-wild-oasis-booking-alamin.vercel.app/thumbnail.png"
       />
-      <meta property="og:site_name" content="The Wild Oasis Booking" />
+      <meta property="og:site_name" content="Hotel Management System Booking" />
       <meta
         property="og:image:alt"
-        content="Thumbnail image of The Wild Oasis Booking website"
+        content="Thumbnail image of Hotel Management System Booking website"
       />
       <meta property="og:updated_time" content="2024-09-13T10:23:00Z" />
 
@@ -90,10 +90,10 @@ export default function RootLayout({ children }) {
       <meta name="geo.placename" content="Dhaka" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="The Wild Oasis Booking" />
+      <meta name="twitter:title" content="Hotel Management System Booking" />
       <meta
         name="twitter:description"
-        content="Explore The Wild Oasis Booking by Alamin (CodeWithAlamin). Find unique destinations, thrilling activities, and plan your next wild getaway."
+        content="Explore Hotel Management System Booking by Alamin (CodeWithAlamin). Find unique destinations, thrilling activities, and plan your next wild getaway."
       />
       <meta
         name="twitter:image"
@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
       <meta name="twitter:creator" content="@CodeWithAlamin" />
       <meta
         name="twitter:image:alt"
-        content="Thumbnail image of The Wild Oasis Booking website"
+        content="Thumbnail image of Hotel Management System Booking website"
       />
       <body
         className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}

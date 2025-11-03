@@ -24,27 +24,27 @@ function ReservationCard({ booking, onDelete }) {
   } = booking;
 
   return (
-    <div className="flex flex-col md:flex-row border border-primary-800">
+    <div className="flex flex-col md:flex-row border border-primary-800/70 rounded-xl overflow-hidden bg-primary-900/40 shadow-lg shadow-black/10">
       <div className="relative h-32 aspect-square">
         <Image
           fill
           src={image}
           alt={`Cabin ${name}`}
-          className="object-cover border-r border-primary-800"
+          className="object-cover border-r border-primary-800/70"
         />
       </div>
 
-      <div className="flex-grow px-6 py-3 flex flex-col">
+      <div className="flex-grow px-6 py-4 flex flex-col">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-xl font-semibold text-primary-100">
             {numNights} nights in Cabin {name}
           </h3>
           {isPast(new Date(startDate)) ? (
-            <span className="bg-yellow-800 text-yellow-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-sm">
+            <span className="bg-yellow-800/80 text-yellow-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-full">
               past
             </span>
           ) : (
-            <span className="bg-green-800 text-green-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-sm">
+            <span className="bg-green-800/80 text-green-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-full">
               upcoming
             </span>
           )}
@@ -70,14 +70,14 @@ function ReservationCard({ booking, onDelete }) {
         </div>
       </div>
 
-      <div className="flex flex-row justify-between md:flex-col border-l border-primary-800 md:w-[100px]">
+      <div className="flex flex-row justify-between md:flex-col border-l border-primary-800/70 md:w-[110px]">
         {!isPast(startDate) ? (
           <>
             <Link
               href={`/account/reservations/edit/${id}`}
-              className="group flex items-center justify-center md:justify-start gap-2 uppercase text-xs font-bold text-primary-300 border-b border-primary-800 flex-grow px-3 hover:bg-accent-600 transition-colors hover:text-primary-900 py-4 md:py-0"
+              className="group flex items-center justify-center md:justify-start gap-2 uppercase text-xs font-bold text-primary-300 border-b border-primary-800/70 flex-grow px-3 hover:bg-accent-500/90 transition-colors hover:text-primary-900 py-4 md:py-0"
             >
-              <PencilSquareIcon className="h-5 w-5 text-primary-600 group-hover:text-primary-800 transition-colors" />
+              <PencilSquareIcon className="h-5 w-5 text-primary-500 group-hover:text-primary-800 transition-colors" />
               <span className="mt-1">Edit</span>
             </Link>
             <DeleteReservation bookingId={id} onDelete={onDelete} />

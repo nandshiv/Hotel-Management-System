@@ -17,7 +17,7 @@ function Filter() {
   }
 
   return (
-    <div className="border border-primary-800 flex flex-wrap">
+    <div className="flex md:flex-col gap-2 md:gap-3 bg-primary-900/40 border border-primary-800/70 rounded-xl p-2 md:p-3">
       <Button
         filter="all"
         handleFilter={handleFilter}
@@ -57,9 +57,12 @@ function Button({ filter, handleFilter, activeFilter, children }) {
   return (
     <button
       onClick={() => handleFilter(filter)}
-      className={`${
-        filter === activeFilter ? "bg-primary-700 text-primary-50" : ""
-      } py-2 px-5 hover:bg-primary-700`}
+      className={`$${""}
+        ${
+          filter === activeFilter
+            ? "bg-accent-500 text-primary-900"
+            : "bg-primary-800/60 text-primary-100"
+        } w-full md:w-auto rounded-full py-2 px-5 text-sm font-semibold hover:bg-accent-400 hover:text-primary-900 transition-colors`}
     >
       {children}
     </button>
