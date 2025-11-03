@@ -4,7 +4,10 @@
 
 **Hotel Management System** is a full-featured web application developed by **Shiv Nand** for managing hotel cabin bookings and reservations. Users can browse available cabins, check real-time availability, make reservations, and manage their bookings through an intuitive, responsive interface.
 
-<!-- Screenshot placeholder - Add screenshot here when available -->
+## 📸 Screenshot
+
+![Website Preview](public/thumbnail.png)
+
 
 ## ✨ Features
 
@@ -129,39 +132,7 @@ Ensure all required environment variables are set in your `.env.local` file:
 | `AUTH_GOOGLE_ID` | Google OAuth Client ID |
 | `AUTH_GOOGLE_SECRET` | Google OAuth Client Secret |
 
-## 🌐 Deployment
-
-This application can be deployed on any platform that supports Node.js:
-
-- **Vercel** (Recommended for Next.js)
-- **Netlify**
-- **Render**
-- **Railway**
-- **AWS Amplify**
-
-### Deployment Checklist
-
-1. Set all environment variables in your hosting platform
-2. Update `public/sitemap.xml` with your production domain
-3. Update `public/robots.txt` with your production domain
-4. Configure canonical URLs in `app/layout.js`
-5. Update Open Graph and Twitter card URLs in `app/layout.js`
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
 **Shiv Nand**
-
-- Developer & Maintainer of Hotel Management System
-- All rights reserved © 2024
-
----
-
-<div align="center">
-
-**Built with ❤️ by Shiv Nand**
-
-</div>
